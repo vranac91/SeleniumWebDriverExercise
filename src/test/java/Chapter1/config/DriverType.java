@@ -99,5 +99,6 @@ public enum DriverType implements DriverSetup {
         }
     };
 
+    // get headless boolean value from pom.xml file, defined with <headless> tag
     public final static boolean HEADLESS = Boolean.getBoolean("headless");
 }

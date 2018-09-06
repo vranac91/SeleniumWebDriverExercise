@@ -12,9 +12,13 @@ import java.util.List;
 
 public class DriverBase {
 
-    private static List<DriverFactory> webDriverThreadPool = Collections.synchronizedList(new ArrayList<DriverFactory>());
+    // creating a list variable that will contain all driver instances
+    private static List<DriverFactory> webDriverThreadPool = Collections.synchronizedList(new ArrayList<>());
+
+    // creating a local variable for driver threads
     private static ThreadLocal<DriverFactory> driverThread;
 
+    // instantiate new WebDriver defined in DriverFactory
     @BeforeSuite(alwaysRun = true)
     public static void instantiateDriverObject() {
         driverThread = new ThreadLocal<DriverFactory>() {
@@ -27,10 +31,12 @@ public class DriverBase {
         };
     }
 
+    // create or return instance of WebDriver; method defined in DriverFactory class
     public static RemoteWebDriver getDriver() {
         return driverThread.get().getDriver();
     }
 
+    // clear instance cookies to be able to reuse it
     @AfterMethod(alwaysRun = true)
     public static void clearCookies() {
         try {
@@ -40,6 +46,7 @@ public class DriverBase {
         }
     }
 
+    // close all instances of the driver contained in webDriverThreadPool list
     @AfterSuite(alwaysRun = true)
     public static void closeDriverObjects() {
         for (DriverFactory webDriverThread : webDriverThreadPool) {
