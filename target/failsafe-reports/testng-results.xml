@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="5318" started-at="2018-09-06T10:13:45Z" finished-at="2018-09-06T10:13:51Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="5318" started-at="2018-09-06T10:13:45Z" finished-at="2018-09-06T10:13:51Z">
+      <class name="Chapter1.BasicIT">
+        <test-method status="PASS" signature="instantiateDriverObject()[pri:0, instance:Chapter1.BasicIT@36f6e879]" name="instantiateDriverObject" is-config="true" duration-ms="8" started-at="2018-09-06T10:13:45Z" finished-at="2018-09-06T10:13:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateDriverObject -->
+        <test-method status="PASS" signature="googleCheeseExample()[pri:0, instance:Chapter1.BasicIT@36f6e879]" name="googleCheeseExample" duration-ms="4227" started-at="2018-09-06T10:13:45Z" finished-at="2018-09-06T10:13:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleCheeseExample -->
+        <test-method status="PASS" signature="googleMilkExample()[pri:0, instance:Chapter1.BasicIT@36f6e879]" name="googleMilkExample" duration-ms="5295" started-at="2018-09-06T10:13:45Z" finished-at="2018-09-06T10:13:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleMilkExample -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:Chapter1.BasicIT@36f6e879]" name="clearCookies" is-config="true" duration-ms="17" started-at="2018-09-06T10:13:50Z" finished-at="2018-09-06T10:13:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookies -->
+        <test-method status="PASS" signature="clearCookies()[pri:0, instance:Chapter1.BasicIT@36f6e879]" name="clearCookies" is-config="true" duration-ms="8" started-at="2018-09-06T10:13:51Z" finished-at="2018-09-06T10:13:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookies -->
+        <test-method status="PASS" signature="closeDriverObjects()[pri:0, instance:Chapter1.BasicIT@36f6e879]" name="closeDriverObjects" is-config="true" duration-ms="1149" started-at="2018-09-06T10:13:51Z" finished-at="2018-09-06T10:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriverObjects -->
+      </class> <!-- Chapter1.BasicIT -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
