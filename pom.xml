@@ -31,6 +31,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <!-- Dependency versions -->
+        <phantomjsdriver.version>1.4.3</phantomjsdriver.version>
         <selenium.version>3.14.0</selenium.version>
         <testng.version>6.14.3</testng.version>
         <!-- Plugin versions -->
@@ -41,9 +42,14 @@
         - threads denotes the number of parallel threads used to execute tests
         -->
         <threads>1</threads>
-            <browser>firefox</browser>
-            <overwrite.binaries>false</overwrite.binaries>
-            <headless>true</headless>
+        <browser>firefox</browser>
+        <overwrite.binaries>false</overwrite.binaries>
+        <headless>true</headless>
+        <remote>false</remote>
+        <seleniumGridURL/>
+        <platform/>
+        <browserVersion/>
+        <screenshotDirectory>${project.build.directory}/screenshots</screenshotDirectory>
     </properties>
 
     <!--
@@ -84,9 +90,14 @@
                             <threadCount>${threads}</threadCount>
                             <systemPropertyVariables>
                                 <browser>${browser}</browser>
+                                <screenshotDirectory>${screenshotDirectory}</screenshotDirectory>
+                                <remoteDriver>${remote}</remoteDriver>
+                                <gridURL>${seleniumGridURL}</gridURL>
+                                <desiredPlatform>${platform}</desiredPlatform>
+                                <desiredBrowserVersion>${browserVersion}</desiredBrowserVersion>
                                 <headless>${headless}</headless>
-                                <!--Set properties passed in by the driver binary
-                    downloader-->
+                                <!--Set properties passed in by the driver binary downloader-->
+                                <phantomjs.binary.path>${phantomjs.binary.path}</phantomjs.binary.path>
                                 <webdriver.chrome.driver>${webdriver.chrome.driver}</webdriver.chrome.driver>
                                 <webdriver.ie.driver>${webdriver.ie.driver}</webdriver.ie.driver>
                                 <webdriver.opera.driver>${webdriver.opera.driver}</webdriver.opera.driver>

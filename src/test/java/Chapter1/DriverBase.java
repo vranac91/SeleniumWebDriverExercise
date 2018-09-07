@@ -1,14 +1,19 @@
 package Chapter1;
 
 import Chapter1.config.DriverFactory;
+import Chapter1.listeners.ScreenshotListener;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+@Listeners(ScreenshotListener.class)
 
 public class DriverBase {
 
@@ -32,7 +37,7 @@ public class DriverBase {
     }
 
     // create or return instance of WebDriver; method defined in DriverFactory class
-    public static RemoteWebDriver getDriver() {
+    public static RemoteWebDriver getDriver() throws MalformedURLException {
         return driverThread.get().getDriver();
     }
 

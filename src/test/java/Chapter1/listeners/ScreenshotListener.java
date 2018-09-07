@@ -1,6 +1,6 @@
 package Chapter1.listeners;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+import Chapter1.helpers.FileHelper;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -8,10 +8,12 @@ import org.openqa.selenium.remote.Augmenter;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
+import javax.annotation.Nonnull;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+// imported to handle getDriver() method called in the listener
 import static Chapter1.DriverBase.getDriver;
 
 /**
@@ -19,23 +21,14 @@ import static Chapter1.DriverBase.getDriver;
  * Created at 06/09/2018
  */
 public class ScreenshotListener extends TestListenerAdapter {
-    private boolean createFile(File screenshot) {
-        boolean fileCreated = false;
-        if (screenshot.exists()) {
-            fileCreated = true;
-        } else {
-            File parentDirectory = new File(screenshot.getParent());
-            if (parentDirectory.exists() || parentDirectory.mkdirs()) {
-                try {
-                    fileCreated = screenshot.createNewFile();
-                } catch (IOException errorCreatingScreenshot) {
-                    errorCreatingScreenshot.printStackTrace();
-                }
-            }
-        }
-        return fileCreated;
-    }
 
+
+
+    /**
+     *
+     * @param driver
+     * @param screenshot
+     */
     private void writeScreenshotToFile(WebDriver driver, File screenshot) {
         try {
             FileOutputStream screenshotStream = new FileOutputStream(screenshot);
@@ -54,7 +47,7 @@ public class ScreenshotListener extends TestListenerAdapter {
             String screenshotDirectory = System.getProperty("screenshotDirectory", "target/screenshots");
             String screenshotAbsolutePath = screenshotDirectory + File.separator + System.currentTimeMillis() + "_" + failingTest.getName() + ".png";
             File screenshot = new File(screenshotAbsolutePath);
-            if (createFile(screenshot)) {
+            if (FileHelper.createFile(screenshot)) {
                 try {
                     writeScreenshotToFile(driver, screenshot);
                 } catch (ClassCastException weNeedToAugmentOurDriverObject) {
@@ -69,5 +62,6 @@ public class ScreenshotListener extends TestListenerAdapter {
             System.err.println("Unable to capture screenshot...");
             ex.printStackTrace();
         }
+
     }
 }
