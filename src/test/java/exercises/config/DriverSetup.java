@@ -1,4 +1,4 @@
-package Chapter1.config;
+package exercises.config;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;

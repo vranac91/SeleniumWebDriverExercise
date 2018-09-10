@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="Chapter1.BasicIT" time="6.679" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="Chapter1.BasicIT" time="2.872" tests="2" errors="0" skipped="0" failures="2">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -14,26 +14,29 @@
     <property name="webdriver.ie.driver" value=""/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="user.timezone" value=""/>
-    <property name="java.vm.specification.version" value="1.8"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="user.country" value="HR"/>
+    <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="HR"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/testmac/IdeaProjects/MasteringSeleniumWebDriver3/target/surefire/surefirebooter7836139402172490647.jar /Users/testmac/IdeaProjects/MasteringSeleniumWebDriver3/target/surefire 2018-09-06T12-13-45_198-jvmRun1 surefire7991888654979829406tmp surefire_05015021790705665106tmp"/>
+    <property name="sun.java.command" value="/Users/testmac/IdeaProjects/MasteringSeleniumWebDriver3/target/surefire/surefirebooter1233797616423104057.jar /Users/testmac/IdeaProjects/MasteringSeleniumWebDriver3/target/surefire 2018-09-10T10-39-46_485-jvmRun1 surefire7837436664450176010tmp surefire_0874838735072691348tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="surefire.test.class.path" value="/Users/testmac/IdeaProjects/MasteringSeleniumWebDriver3/target/test-classes:/Users/testmac/IdeaProjects/MasteringSeleniumWebDriver3/target/mastering-selenium-testng-1.0-SNAPSHOT.jar:/Users/testmac/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/testmac/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/testmac/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/testmac/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/testmac/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/testmac/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/testmac/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/testmac/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/testmac/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/testmac/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/testmac/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/testmac/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/testmac/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/testmac/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/testmac/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/testmac/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/testmac/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/testmac/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/testmac/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/testmac/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/testmac/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/testmac/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/Users/testmac/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/testmac/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/testmac/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/testmac/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/testmac/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/testmac/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.jar:/Users/testmac/.m2/repository/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/testmac"/>
     <property name="user.language" value="en"/>
+    <property name="remoteDriver" value="false"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="screenshotDirectory" value="/Users/testmac/IdeaProjects/MasteringSeleniumWebDriver3/target/screenshots"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre"/>
-    <property name="basedir" value="/Users/testmac/IdeaProjects/MasteringSeleniumWebDriver3"/>
     <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/testmac/IdeaProjects/MasteringSeleniumWebDriver3"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/testmac/IdeaProjects/MasteringSeleniumWebDriver3/target/surefire/surefirebooter7836139402172490647.jar"/>
+    <property name="surefire.real.class.path" value="/Users/testmac/IdeaProjects/MasteringSeleniumWebDriver3/target/surefire/surefirebooter1233797616423104057.jar"/>
+    <property name="desiredPlatform" value=""/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -46,29 +49,66 @@
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
+    <property name="phantomjs.binary.path" value=""/>
     <property name="browser" value="firefox"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="localRepository" value="/Users/testmac/.m2/repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/01/y81pvl917qsgp327fcrwflq80000gn/T/"/>
+    <property name="desiredBrowserVersion" value=""/>
     <property name="java.version" value="1.8.0_181"/>
     <property name="user.dir" value="/Users/testmac/IdeaProjects/MasteringSeleniumWebDriver3"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="threads" value="2"/>
     <property name="webdriver.gecko.driver" value="/Users/testmac/IdeaProjects/MasteringSeleniumWebDriver3/src/test/resources/selenium_standalone_binaries/osx/marionette/64bit/geckodriver"/>
+    <property name="gridURL" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="sun.os.patch.level" value="unknown"/>
-    <property name="headless" value="false"/>
+    <property name="headless" value="true"/>
     <property name="java.library.path" value="/Users/testmac/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vm.version" value="25.181-b13"/>
-    <property name="java.ext.dirs" value="/Users/testmac/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.ext.dirs" value="/Users/testmac/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="googleCheeseExample" classname="Chapter1.BasicIT" time="4.237"/>
-  <testcase name="googleMilkExample" classname="Chapter1.BasicIT" time="5.294"/>
+  <testcase name="googleCheeseExample" classname="Chapter1.BasicIT" time="2.188">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at Chapter1.BasicIT.googleExampleThatSearchesFor(BasicIT.java:25)
+	at Chapter1.BasicIT.googleCheeseExample(BasicIT.java:43)
+</failure>
+    <system-out><![CDATA[Configuring TestNG with: TestNG60Configurator
+ 
+Local Operating System: MAC OS X
+Local Architecture: x86_64
+Selected Browser: FIREFOX
+Connecting to Selenium Grid: false
+ 
+]]></system-out>
+    <system-err><![CDATA[1536568787486	geckodriver	INFO	geckodriver 0.20.0
+1536568787493	geckodriver	INFO	Listening on 127.0.0.1:39842
+1536568787693	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-profile" "/var/folders/01/y81pvl917qsgp327fcrwflq80000gn/T/rust_mozprofile.NJ9KevnOUxKE"
+*** You are running in headless mode.
+2018-09-10 10:39:48.842 plugin-container[1256:40608] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7e3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-10 10:39:49.032 plugin-container[1257:40633] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x763f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1536568789209	Marionette	INFO	Listening on port 51250
+1536568789271	Marionette	WARN	TLS certificate errors will be ignored for this session
+Sep 10, 2018 10:39:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Unable to capture screenshot: null
+]]></system-err>
+  </testcase>
+  <testcase name="googleMilkExample" classname="Chapter1.BasicIT" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at Chapter1.BasicIT.googleExampleThatSearchesFor(BasicIT.java:25)
+	at Chapter1.BasicIT.googleMilkExample(BasicIT.java:48)
+</failure>
+    <system-err><![CDATA[Unable to delete cookies: null
+Unable to capture screenshot: null
+]]></system-err>
+  </testcase>
 </testsuite>

@@ -1,4 +1,4 @@
-package Chapter1.config;
+package exercises.config;
 
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -7,8 +7,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import static Chapter1.config.DriverType.FIREFOX;
-import static Chapter1.config.DriverType.valueOf;
+import static exercises.config.DriverType.FIREFOX;
+import static exercises.config.DriverType.valueOf;
 
 public class DriverFactory {
 
@@ -37,7 +37,7 @@ public class DriverFactory {
             instantiateWebDriver(selectedDriverType);
         }
 
-        return webDriver;
+        return null;
     }
 
     public void quitDriver() {

@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: Chapter1.BasicIT
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.679 s - in Chapter1.BasicIT
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.872 s <<< FAILURE! - in Chapter1.BasicIT
+googleCheeseExample(Chapter1.BasicIT)  Time elapsed: 2.188 s  <<< FAILURE!
+java.lang.NullPointerException
+	at Chapter1.BasicIT.googleExampleThatSearchesFor(BasicIT.java:25)
+	at Chapter1.BasicIT.googleCheeseExample(BasicIT.java:43)
+
+googleMilkExample(Chapter1.BasicIT)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at Chapter1.BasicIT.googleExampleThatSearchesFor(BasicIT.java:25)
+	at Chapter1.BasicIT.googleMilkExample(BasicIT.java:48)
+

@@ -1,6 +1,6 @@
-package Chapter1.listeners;
+package exercises.listeners;
 
-import Chapter1.helpers.FileHelper;
+import exercises.helpers.FileHelper;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -8,13 +8,12 @@ import org.openqa.selenium.remote.Augmenter;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
-import javax.annotation.Nonnull;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
 // imported to handle getDriver() method called in the listener
-import static Chapter1.DriverBase.getDriver;
+import static exercises.DriverBase.getDriver;
 
 /**
  * @author by Dinko
@@ -59,8 +58,7 @@ public class ScreenshotListener extends TestListenerAdapter {
                 System.err.println("Unable to create: " + screenshotAbsolutePath);
             }
         } catch (Exception ex) {
-            System.err.println("Unable to capture screenshot...");
-            ex.printStackTrace();
+            System.err.println("Unable to capture screenshot: " + ex.getCause());
         }
 
     }

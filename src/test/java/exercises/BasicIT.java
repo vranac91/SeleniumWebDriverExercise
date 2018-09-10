@@ -1,4 +1,4 @@
-package Chapter1;
+package exercises;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
+
+import java.net.MalformedURLException;
 
 /**
  * @author by Dinko
@@ -18,7 +20,7 @@ public class BasicIT extends DriverBase {
         return driver -> driver.getTitle().toLowerCase().startsWith(searchString.toLowerCase());
     }
 
-    private void googleExampleThatSearchesFor(final String searchString) {
+    private void googleExampleThatSearchesFor(final String searchString) throws MalformedURLException {
         WebDriver driver = DriverBase.getDriver();
         driver.get("https://www.google.com");
 
@@ -37,12 +39,12 @@ public class BasicIT extends DriverBase {
     }
 
     @Test
-    public void googleCheeseExample() {
+    public void googleCheeseExample() throws MalformedURLException {
         googleExampleThatSearchesFor("Cheese!");
     }
 
     @Test
-    public void googleMilkExample() {
+    public void googleMilkExample() throws MalformedURLException {
         googleExampleThatSearchesFor("Milk!");
     }
 }

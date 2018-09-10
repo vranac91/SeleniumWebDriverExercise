@@ -1,4 +1,4 @@
-package Chapter1.helpers;
+package exercises.helpers;
 
 import javax.annotation.Nonnull;
 import java.io.File;
